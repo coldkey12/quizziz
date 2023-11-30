@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #220447;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iitu.tsay.quizziz.LeaderboardController">
+   <children>
+      <AnchorPane prefHeight="67.0" prefWidth="600.0" style="-fx-background-color: #292929;">
+         <children>
+            <Label fx:id="homeLabel" layoutX="23.0" layoutY="17.0" text="QUIZZIZ" textFill="#7300ff">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="126.0" layoutY="26.0" text="Leaderboard" textFill="WHITE" />
+            <Label fx:id="questionsLabel" layoutX="200.0" layoutY="26.0" text="Questions" textFill="WHITE" />
+            <Label fx:id="logOutLabel" layoutX="260.0" layoutY="26.0" text="Log out" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <ListView fx:id="leaderList" layoutX="74.0" layoutY="119.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 7;" />
+      <Label layoutX="334.0" layoutY="119.0" text="TOP 1:" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="449.0" layoutY="119.0" text="YOU" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="311.0" layoutY="172.0" text="Just kidding, it's :" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="topOneLabel" layoutX="474.0" layoutY="172.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

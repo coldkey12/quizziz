@@ -5,7 +5,7 @@ import java.util.List;
 public class Question {
     private Long id; // obyazatelno id
     private String text;
-    private List<String> options;
+    private List<Integer> options;
     private Integer correctAnswerIndex;
 
     public Long getId() {
@@ -24,11 +24,11 @@ public class Question {
         this.text = text;
     }
 
-    public List<String> getOptions() {
+    public List<Integer> getOptions() {
         return options;
     }
 
-    public void setOptions(List<String> options) {
+    public void setOptions(List<Integer> options) {
         this.options = options;
     }
 
@@ -43,7 +43,7 @@ public class Question {
     public Question() {
     }
 
-    public Question(Long id, String text, List<String> options, Integer correctAnswerIndex) {
+    public Question(Long id, String text,List<Integer> options, Integer correctAnswerIndex) {
         this.id = id;
         this.text = text;
         this.options = options;

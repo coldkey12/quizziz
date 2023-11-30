@@ -1,14 +1,20 @@
 package models;
 
-import java.util.ArrayList;
-
 // metody v samom nizu
 public class User {
     private Long id; // u kazdogo usera dolzen bit kluch (aydishka) dlya bazi dannyh, i dlya aydishek lucshe Long on dlinniy
-    private String name;
-    private Integer accessLevel; // pishu class s bolshoy bukvi chtobi ya mog delat usera i stavit etot parametr potom
-    private Integer score;
+    private String username;
+    private String password;
+    private int accessLevel; // pishu class s bolshoy bukvi chtobi ya mog delat usera i stavit etot parametr potom
+    private int score;
 
+    public User(Long id, String username, String password, int accessLevel, int score) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+        this.accessLevel = accessLevel;
+        this.score = score;
+    }
 
     public Long getId() {
         return id;
@@ -18,41 +24,38 @@ public class User {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getUsername() {
+        return username;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
-    public Integer getAccessLevel() {
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public int getAccessLevel() {
         return accessLevel;
     }
 
-    public void setAccessLevel(Integer accessLevel) {
+    public void setAccessLevel(int accessLevel) {
         this.accessLevel = accessLevel;
     }
 
-    public User() {
-    }
-
-    public User(Long id, String name, Integer accessLevel, Integer scores) {
-        this.id = id;
-        this.name = name;
-        this.accessLevel = accessLevel;
-        this.score = 0;
-    }
-
-    public void updateScore(double points){
-
-    }
-
-    public Integer getScore() {
+    public int getScore() {
         return score;
     }
 
-    public void setScore(Integer score) {
+    public void setScore(int score) {
         this.score = score;
+    }
+
+    public User() {
     }
 }

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #220447;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iitu.tsay.quizziz.HomePageController">
+   <children>
+      <AnchorPane prefHeight="67.0" prefWidth="600.0" style="-fx-background-color: #292929;">
+         <children>
+            <Label layoutX="23.0" layoutY="17.0" text="QUIZZIZ" textFill="#7300ff">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="leaderboardLabel" layoutX="126.0" layoutY="26.0" text="Leaderboard" textFill="WHITE" />
+            <Label fx:id="questionsLabel" layoutX="200.0" layoutY="26.0" text="Questions" textFill="WHITE" />
+            <Label fx:id="logOutLabel" layoutX="260.0" layoutY="26.0" text="Log out" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="170.0" layoutY="104.0" text="Welcome, " textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="usernameLabel" layoutX="311.0" layoutY="104.0" text="name" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="96.0" layoutY="152.0" text="Your current score is:" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="scoreLabel" layoutX="311.0" layoutY="152.0" text="score" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="180.0" layoutY="200.0" text="Access level:" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="accessLevelLabel" layoutX="311.0" layoutY="200.0" text="accesslvl" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
