@@ -24,5 +24,7 @@ public class LoginPageController {
     @FXML
     void initialize(){
         DbHandler dbHandler = new DbHandler();
+
+
     }
 }
